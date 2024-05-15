@@ -7,7 +7,9 @@
     <style>
         .container{
           display: flex;
-          flex-direction: space-evenly;
+          flex-direction: row;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
         }
         .card1{
             margin: 20px;
@@ -50,18 +52,97 @@
             margin-top: 10px;
         }
         #img1{
-            border-radius: 100%;
-            top: 57.9%;
-            left: 65.4%;
-            width: 23%;
-            padding-bottom: 23%; 
+            border-radius: 100px;
+            margin-top: -35px;
+            margin-left: 230px;
         }
+        #a{
+            margin-top: -90px;
+            margin-left: 20px;
+        }
+        /* Small Devices */
+        @media screen  and (max-width:600px){
+            .container {
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+            }
+        
+            .card1{
+                width: 150px;
+                height:300px
+        }
+    }
+        /* Normal Devices */
+  
+  @media screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        width: 400px;
+    }
+}
+
+/* Tablet Devices */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        justify-content: space-between;
+        margin-left: 40px;
+    }
+}
+/* Large Devices */
+@media screen and (min-width:993px) and (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 20px;
+        justify-content: space-between;
+    }
+}
     </style>
 </head>
 <body>
     <div class="container">
-    <div class="card1"> <img src="https://m.media-amazon.com/images/M/MV5BMjk1NzcwMDUtNDU4ZC00MzlhLTkzZjAtM2MxMTRjZGE0ODdhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_FMjpg_UX1000_.jpg" height="500px" width="300px"><img src=""<a href="https://go.jc.fm/fRhd/plb5fzga"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Jio_cinema.png" height="50px" ></a></div>
-    <div class="card2"> <img src="https://images.filmibeat.com/ph-big/2016/07/m-s-dhoni-the-untold-story-poster_146788833400.jpg"height="500px" width="300px"><a href="https://go.jc.fm/fRhd/plb5fzga" id="img1"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Jio_cinema.png" height="50px" ></a></div>
-    <div class="card3"><img src="https://filmfare.wwmindia.com/content/2021/apr/patrioticpatrioticdialogues71619074968.jpg"height="500px" width="300px"><a href="https://go.jc.fm/fRhd/plb5fzga" id="img1"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Jio_cinema.png" height="50px" ></a></div></div>
+    <div class="card1"> <img src="https://m.media-amazon.com/images/M/MV5BMjk1NzcwMDUtNDU4ZC00MzlhLTkzZjAtM2MxMTRjZGE0ODdhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_FMjpg_UX1000_.jpg" style="width:100%;"><div  id="img1"><a href="https://go.jc.fm/fRhd/plb5fzga"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Jio_cinema.png" height="40px" ></a></div><div  id="a"><img src="https://m.media-amazon.com/images/M/MV5BMjk1NzcwMDUtNDU4ZC00MzlhLTkzZjAtM2MxMTRjZGE0ODdhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_FMjpg_UX1000_.jpg" height="150px" width="100px"> </div><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SHERSHAAH</h1>
+        <ul>
+            <li>Release date: 12 August 2021 (India)</li>
+            <li> Director: 	Vishnuvardhan</li>
+            <li> Starring: Sidharth Malhotra, Kiara Advani</li>
+            <li>Written by:	Sandeep Shrivastava</li>
+        </ul>
+    </div>
+    <div class="card2"> <img src="https://images.filmibeat.com/ph-big/2016/07/m-s-dhoni-the-untold-story-poster_146788833400.jpg"style="width:100%;"><div  id="img1"><a href="https://go.jc.fm/fRhd/plb5fzga"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Jio_cinema.png" height="40px" ></a></div><div  id="a"><img src="https://images.filmibeat.com/ph-big/2016/07/m-s-dhoni-the-untold-story-poster_146788833400.jpg" height="150px" width="100px"></div><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M.S.DHONI</h1> <ul>
+        <li>Release date: 30 September 2016(India)</li>
+        <li> Director: 	Neeraj Pandey</li>
+        <li> Starring:  Sushant Singh Rajput,Disha Patani, Kiara Advani</li>
+        <li>Written by: Neeraj Pandey,Dilip Jha</li>
+    </ul>
+</div>
+    <div class="card3"><img src="https://filmfare.wwmindia.com/content/2021/apr/patrioticpatrioticdialogues71619074968.jpg"style="width:100%;"><div  id="img1"><a href="https://go.jc.fm/fRhd/plb5fzga"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Jio_cinema.png" height="40px" ></a></div><div  id="a"><img src="https://filmfare.wwmindia.com/content/2021/apr/patrioticpatrioticdialogues71619074968.jpg" height="150px" width="100px"></div><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RAAZI</h1><ul>
+        <li>Release date: 11 May 2018 (India)</li>
+        <li> Director: 	Meghna Gulzar</li>
+        <li> Starring: 	Alia Bhatt,Vicky Kaushal</li>
+        <li>Written by:Bhavani Iyer,Meghna Gulzar</li>
+    </ul>
+</div>
+    
+   
 </body>
 </html>
